@@ -4,18 +4,24 @@ body {
 }
 
 .form1 {
-    width: 800px;
-
-    display: flex;
-    flex-flow: column nowrap;
+    color: blue;
     font-size: 22px;
+    font-weight: bold;
+    width: 800px;
+    display: flex;
+    flex-flow: column;
+    
     padding: 10px 0px 10px 0;
+
+    transition: all 0.3s;
 }
 .mem-text {
     display: flex;
 }
 
+
 .link{
+    
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
@@ -25,6 +31,12 @@ body {
 
 }
 
+
+
+.form1:hover {
+   color: black;
+}
+
 .mem-text{
     display: flex;
     flex-flow: row nowrap;
@@ -32,11 +44,18 @@ body {
 }
 
 .mem-pic{
+    height: 0px;
+    overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 40px;
-    
+    transition: all 0.5s;
+}
+
+.link:hover .mem-pic {
+    height: 400px;
+
 }
 
 .img1 {
