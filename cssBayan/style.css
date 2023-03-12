@@ -27,7 +27,7 @@ body {
 }
 .mem-text {
     display: flex;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 
@@ -72,6 +72,8 @@ body {
 .img1 {
 width: 15px;
 height: 15px;
+opacity: 0;
+transition: all 0.3s;
 }
 
 .radio1{
@@ -104,4 +106,9 @@ height: 15px;
 
 .link:active .pic {
     opacity: 0.7;
+}
+
+.form1:hover .img1 {
+    opacity: 1;
+
 }
