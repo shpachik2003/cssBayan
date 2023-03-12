@@ -1,0 +1,46 @@
+body {
+    padding: 50px;
+    background-color: #f6f6ec;
+}
+
+.form1 {
+    width: 800px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 22px;
+    padding: 10px 0px 10px 0;
+}
+.mem-text {
+    display: flex;
+}
+
+.link{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 10px 50px 10px 0;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #4d6278;
+
+}
+
+.mem-text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.mem-pic{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.img1 {
+width: 15px;
+height: 15px;
+}
+
