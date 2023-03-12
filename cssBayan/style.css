@@ -1,22 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 50px;
+    
+}
+
+.container {
     background-color: #f6f6ec;
+    width: 800px;
+    padding: 10px 40px;
 }
 
 .form1 {
+    
     color: blue;
     font-size: 22px;
     font-weight: bold;
-    width: 800px;
+    width: 100%;
     display: flex;
     flex-flow: column;
     
-    padding: 10px 0px 10px 0;
 
     transition: all 0.3s;
 }
 .mem-text {
     display: flex;
+    transition: all 0.3s;
 }
 
 
@@ -30,7 +41,6 @@ body {
     border-bottom: 1px solid #4d6278;
 
 }
-
 
 
 .form1:hover {
@@ -58,8 +68,40 @@ body {
 
 }
 
+
 .img1 {
 width: 15px;
 height: 15px;
 }
 
+.radio1{
+    display: none;
+}
+
+.radio1:checked ~ .mem-pic {
+    height: 400px;
+}
+
+.radio1:hover ~ .mem-text .img1 {
+    transform: rotate(45deg);
+}
+
+.radio1:checked ~ .mem-text .img1 {
+    transform: rotate(45deg);
+}
+
+.radio1:checked ~ .mem-text {
+    color: black;
+}
+
+.link:active .mem-text {
+    color: blue;
+}
+
+.pic{
+    transition: all 0.3s;
+}
+
+.link:active .pic {
+    opacity: 0.7;
+}
